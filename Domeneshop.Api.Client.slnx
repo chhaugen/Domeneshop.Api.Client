@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Domeneshop.Api.Client.Playground/Domeneshop.Api.Client.Playground.csproj" />
+  <Project Path="src/Domeneshop.Api.Client/Domeneshop.Api.Client.csproj" />
+</Solution>
