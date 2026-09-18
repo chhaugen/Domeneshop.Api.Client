@@ -50,9 +50,7 @@ internal class Program
             }
         };
 
-        var refitSettings = new RefitSettings(new SystemTextJsonContentSerializer(_jsonSerializerOptions));
-
-        var domeneshopApi = RestService.ForGenerated<IDomeneshopEndpoints>(httpClient, refitSettings);
+        var domeneshopApi = RestService.ForGenerated<IDomeneshopEndpoints>(httpClient, DomeneshopRefitSettings.Default);
 
         // Domains
         var domains = await domeneshopApi.ListDomainsAsync();
